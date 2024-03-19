@@ -60,3 +60,20 @@ nevek.forEach((nev) => {
     li.textContent = nev;
     nevlista.append(li)
 })
+
+const nev = document.querySelector(".nev")
+const agomb = document.querySelector(".THEBUTTON")
+agomb.addEventListener ('click',() =>{
+   xd
+})
+
+function xd(){
+    const name = nev.value;
+    nevek.push(name);
+    nevlista.append(makeLi(name))
+}
+function makeLi(text) {
+    var li = document.createElement('li');
+    li.textContent = text;
+    return li;
+}
